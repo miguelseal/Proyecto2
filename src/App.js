@@ -6,23 +6,27 @@ import Portal from './Components/Portal/Portal.js';
 import Catalog from './Components/Catalog/Catalog.js';
 import Contact from './Components/Contact/Contact.js';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {useFirebaseApp} from 'reactfire';
 
-const app = () => {
+
+const App = () => {
+  let firebase = useFirebaseApp();
+
+  console.log(firebase);
+  
   return (
     <Router className="h-100">
-      <div>
-        <Header/>
-        <Switch>
-          <Route path="/Catalog" exact component={Catalog}></Route>
-          <Route path="/Contact" exact component={Contact}></Route>
-          <Route path="/Home" exact component={Portal}></Route>
-          <Route path="/" exact component={Portal}></Route>
-        </Switch>
-        <Footer />
-      </div>
+      <Header/>
+      <Switch>
+        <Route path="/Catalog" exact><Catalog /></Route>
+        <Route path="/Contact" exact component={Contact}></Route>
+        <Route path="/Home" exact component={Portal}></Route>
+        <Route path="/" exact component={Portal}></Route>
+      </Switch>
+      <Footer />
     </Router>
   );
 }
 
-export default app;
+export default App;
 

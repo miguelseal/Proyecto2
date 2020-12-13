@@ -8,7 +8,7 @@ class Login extends Component {
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Correo Electrónico</Form.Label>
-            <Form.Control type="email" placeholder="Ingrese su correo electrónico" />
+            <Form.Control type="email" placeholder="Ingrese su correo" />
             <Form.Text className="text-muted"></Form.Text>
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
