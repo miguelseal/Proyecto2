@@ -1,7 +1,7 @@
 import React from 'react';
 
 const style = {
-  backgroundColor: 'rgb(240,240,240)'
+  backgroundColor: 'rgb(245,245,245)'
 };
 
 const footer = () => {

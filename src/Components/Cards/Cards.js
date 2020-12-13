@@ -1,7 +1,7 @@
 import React from 'react'; 
 import {Card} from 'react-bootstrap';
 
-const cards = props => {
+const Cards = props => {
   const style = {
     width: '20rem',
     boxShadow: '1px 1px 2px black'
@@ -18,4 +18,4 @@ const cards = props => {
   );
 }
 
-export default cards;
+export default Cards;
